@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Futuristic Glow Navbar - Live Preview</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <nav class="navbar-sticky">
+            <div class="logo">YOUR LOGO</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Dropdown 1 <span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Dropdown 2 <span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 2-1</a></li>
+                        <li><a href="#">Page 2-2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Other</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <header class="main-header">
+            <h1>Futuristic Glow Navbar - Live Preview</h1>
+            <p>Three ready-to-use themes, fully responsive, and highly customizable. Scroll down and resize your browser to explore all the features!</p>
+        </header>
+
+        <div class="version-container">
+            <a href="#" class="btn" onclick="switchTheme('')">Default Theme</a>
+            <a href="#" class="btn btn-crimson" onclick="switchTheme('theme-crimson')">Crimson Theme</a>
+            <a href="#" class="btn" style="--primary-color: #00ff41; --primary-glow-color: rgba(0, 255, 65, 0.3);" onclick="switchTheme('theme-matrix')">Matrix Theme</a>
+        </div>
+
+        
+
+        <div class="content-wrapper">
+            
+            <section class="content-section">
+                <h2>100% responsive & Mobile Friendly</h2>
+                <p>Resize your browser to less than 820px to see the magic! The menu will automatically transform into a functional hamburger icon with smooth animation.</p>
+                <p><strong>attention:</strong> In the mobile version, the dropdown menu is activated by clicking (not hovering) for the best user experience on touch devices.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Navigation Stays Visible (Sticky on Scroll)</h2>
+                <p>Scroll down this page. The navbar will remain fixed at the top of the screen, ensuring navigation is always easily accessible to your visitors.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Super Easy Customization with CSS Variables</h2>
+                <p>You don't need to touch hundreds of lines of code. Just change a few variables at the top of the file. <code>style.css</code> to create your own unique theme.</p>
+                <pre><code>:root {
+        --primary-color: cyan;
+        --primary-glow-color: rgba(0, 255, 255, 0.3);
+        --background-gradient-start: #0f2027;
+        --background-gradient-middle: #203a43;
+        --background-gradient-end: #2c5364;
+        --text-color: #ffffff;
+        --dark-color: #000000;
+        --font-family: 'Orbitron', sans-serif;
+    }</code></pre>
+            </section>
+
+            <section class="content-section">
+                <h2>Feature Highlights</h2>
+                <ul class="feature-list">
+                    <li>3+ Ready-to-Use Themes (Default, Crimson, Matrix)</li>
+                    <li>Easily Extensible Theme System</li>
+                    <li>100% Responsive with Hamburger Menu</li>
+                    <li>Smart Dropdown Logic (Hover on Desktop, Click on Mobile)</li>
+                    <li>Sticky Navbar Feature on Scroll</li>
+                    <li>Easy Customization via CSS Variables</li>
+                    <li>Built with Pure JavaScript (Vanilla JS) - No jQuery!</li>
+                    <li>Clean and Well-Structured HTML, CSS, and JS Code</li>
+                    <li>Smooth Animations and Modern Glow Effects</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <footer class="site-footer">
+            <p>© 2025 Futuristic Navbar. All Rights Reserved.</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
